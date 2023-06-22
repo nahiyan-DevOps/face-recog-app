@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pyapp-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pyapp
+  template:
+    metadata:
+      labels:
+        app: pyapp
+    spec:
+      containers:
+      - name: pyapp
+        image: nahiyan83bjit/face-recognition-app:stable
+        ports:
+        - containerPort: 8501
