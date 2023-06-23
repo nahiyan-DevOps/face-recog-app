@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: pyapp
-        image: nahiyan83bjit/face-recognition-app:cicd
+        image: nahiyan83bjit/face-recognition-app:CICD
         ports:
         - containerPort: 8501
